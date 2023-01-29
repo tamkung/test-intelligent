@@ -35,5 +35,16 @@ function calculate() {
             result += "<ul><li>" + "เหรียญ" + coinName + "บาท " + coinValue + "เหรียญ" + "</li></ul>";
         }
     }
+
+    // let b10 = change / 10;
+    // let b5 = (change % 10) / 5;
+    // let b2 = ((change % 10) % 5) / 2;
+    // let b1 = (((change % 10) % 5) % 2) / 1;
+    // let result = "เงินทอนคือ " + change + " บาท" + "<br>";
+    // result += "<ul><li>" + "เหรียญสิบบาท " + Math.floor(b10) + " เหรียญ" + "</li></ul>";
+    // result += "<ul><li>" + "เหรียญห้าบาท " + Math.floor(b5) + " เหรียญ" + "</li></ul>";
+    // result += "<ul><li>" + "เหรียญสองบาท " + Math.floor(b2) + " เหรียญ" + "</li></ul>";
+    // result += "<ul><li>" + "เหรียญหนึ่งบาท " + Math.floor(b1) + " เหรียญ" + "</li></ul>";
+
     document.getElementById("result").innerHTML = result.slice(0, -2);
 }
