@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test</title>
+    <script src="./func.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>เครื่องขายนํ้าผลไม้</h1>
+    <form>
+        <label for="product">เลือกนํ้าผลไม้ (1= นํ้าส้ม, 2=นํ้าแอปเปิล, 3=นํ้ากีวี):</label>
+        <input type="text" id="product">
+        <br>
+        <label for="coin-input"> หยอดเหรียญ (a=1,b=5,c=10):</label>
+        <input type="text" id="coin">
+        <br>
+        <button type="button" onclick="calculate()">คำนวณเงินทอน</button>
+    </form>
+    <div id="result"></div>
+
+
+</body>
+
+</html>
